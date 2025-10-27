@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Philippines Weather & Fun Facts</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <script src="config.js"></script>
+</head>
+<body>
+    <section class="weather-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Weather & Fun Facts in the Philippines</h2>
+                <p>Get real-time weather updates and fascinating facts about destinations across the Philippines</p>
+            </div>
+
+            <div class="weather-card">
+                <div class="card-header">
+                    <div class="header-content">
+                        <div class="header-left">
+                            <i class="fas fa-cloud-sun"></i>
+                            <div>
+                                <h3>Philippines Weather</h3>
+                                <p>Search any city, town, province, or barangay in the Philippines</p>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Search Location</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="search-section">
+                    <form class="search-form" id="searchForm">
+                        <div class="search-input-container">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" class="search-input" id="searchInput" 
+                                   placeholder="Search for any city, town, province, or barangay in the Philippines...">
+                            <button type="button" class="clear-button" id="clearButton">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <button type="submit" class="search-button" id="searchButton">
+                            <i class="fas fa-search"></i>
+                            Search
+                        </button>
+                    </form>
+
+                    <div class="featured-destinations">
+                        <p class="featured-label">Quick select Philippine destinations:</p>
+                        <div class="featured-buttons" id="featuredButtons">
+                            <!-- Featured buttons will be added by JavaScript -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-content">
+                    <div class="content-grid">
+                        <div class="weather-info">
+                            <div class="location-info">
+                                <h4>Current Location</h4>
+                                <p class="location-name" id="currentLocation">Manila</p>
+                            </div>
+
+                            <div id="weatherContent">
+                                <!-- Weather content will be updated by JavaScript -->
+                            </div>
+                        </div>
+
+                        <div class="fact-box">
+                            <div class="fact-header">
+                                <div class="fact-icon">💡</div>
+                                <h4 class="fact-title">Did You Know?</h4>
+                            </div>
+                            <div id="factContent">
+                                <!-- Fact content will be updated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="search-results" id="searchResults" style="display: none;">
+                <!-- Search results will be added by JavaScript -->
+            </div>
+        </div>
+    </section>
+</body>
+</html>

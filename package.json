@@ -1,0 +1,9 @@
+{
+  "name": "philippines-weather-app",
+  "version": "1.0.0",
+  "description": "Philippines Weather App with Fun Facts",
+  "homepage": "https://github.com/cionne/Weather-and-Fun-Facts",
+  "scripts": {
+    "build": "echo 'No build step needed for static files'"
+  }
+}
